@@ -18,6 +18,7 @@ export const AddPostForm = () => {
 
   const onSavePostClicked = () => {
     if (title && content) {
+      debugger
       dispatch(postAdded(title, content, userId))
       setTitle('')
       setContent('')
